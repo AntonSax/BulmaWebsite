@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="A website built with Bulma about Tony Sax">
+  <meta name="keywords" content="HTML, CSS">
+  <meta name="author" content="Tony Sax">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>HTML with Bulma</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="http://bulma.io/css/bulma-docs.css">
+
+</head>
+
+<body>
+  <!-- is-fullheight makes this section and its color the height of the computer screen. -->
+  <section class="hero is-info is-bold">
+    <!-- Hero-head makes this always at the top. -->
+    <div class="hero-head">
+      <!-- Container makes this have 20px margins on the sides. It also gives it a max width. -->
+      <div class="container">
+        <nav class="nav has-shadow">
+          <div class="nav-left">
+            <!-- Create some margin/padding space from the left side -->
+            <a class="nav-item" href="frontpage.html">
+              Home
+            </a>
+            <a class="nav-item" href="about.html">
+              About
+            </a>
+            <a class="nav-item" href="travel.html">
+              Travel
+            </a>
+            <a class="nav-item" href="projects.html">
+              Projects
+            </a>
+            <a class="nav-item is-active" href="photos.html">
+              Photos
+            </a>
+            <a class="nav-item" href="#">
+              Animations
+            </a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use this to display some aspect of the Bulma css -->
+  <!-- Try to make the photos in the album slide along the page
+    or flip/rotate when the mouse hovers over them -->
+  <section class="hero is-primary">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          Photo Album
+        </h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-large is-info">
+    <div class="hero-body">
+      <!-- Container makes this have 20px margins on the sides. It also gives it a max width. -->
+      <div class="container">
+        <!-- Commenting out for possible later use -->
+        <!--
+        <div class="tile is-ancestor">
+          <div class="tile is-vertical is-8">
+            <div class="tile">
+              <div class="tile is-parent">
+                <article class="tile is-child notification is-warning">
+                  <figure class="image is-square">
+                    <img src="http://placehold.it/640x480">
+                  </figure>
+                </article>
+                </div>
+              <div class="tile is-parent">
+                <article class="tile is-child notification is-primary">
+                  <figure class="image is-square">
+                    <img src="http://placehold.it/640x480">
+                  </figure>
+                </article>
+              </div>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification is-danger">
+                <figure class="image is-square">
+                  <img src="http://placehold.it/640x480">
+                </figure>
+              </article>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child notification is-success">
+              <div class="content">
+                <p class="title">Tall tile</p>
+                <p class="subtitle">With even more content</p>
+                <div class="content">
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Just using this to pad the photo page -->
+  <!-- Currently does not add padding if there is no content due to it being footer. -->
+  <section class="hero is-medium is-primary">
+    <div class="hero-foot">
+      <div class="container">
+      </div>
+    </div>
+  </section>
+
+  <!-- Try to change this so that no scrollbar is needed. -->
+  <!-- Do this by having the footer raise up when the mouse hovers over a box at the bottom. -->
+  <footer class="footer">
+    <!-- Container class gives indentations of 20px on the sides -->
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          Website by Tony Sax.
+          The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+        </p>
+        <p>
+          <a class="icon" href="https://github.com/jgthms/bulma">
+            <i class="fa fa-github"></i>
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
