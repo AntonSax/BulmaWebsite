@@ -1,3 +1,7 @@
+<!-- Put a pagination on this page -->
+<!-- Notification makes blocks a solid color. -->
+<!-- Remove colors from tile so that there is only red behind them. -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,13 +21,19 @@
 
 <body>
   <!-- is-fullheight makes this section and its color the height of the computer screen. -->
-  <section class="hero is-info is-bold">
+  <section class="hero is-fullheight is-info is-bold">
     <!-- Hero-head makes this always at the top. -->
     <div class="hero-head">
       <!-- Container makes this have 20px margins on the sides. It also gives it a max width. -->
       <div class="container">
         <nav class="nav has-shadow">
-          <div class="nav-left">
+          <div class="container">
+            <div class="nav-left">
+              <div class="nav-item">
+                TonySax.org
+              </div>
+            </div>
+            <div class="nav-right nav-menu">
             <!-- Create some margin/padding space from the left side -->
             <a class="nav-item" href="frontpage.html">
               Home
@@ -47,95 +57,216 @@
         </nav>
       </div>
     </div>
-  </section>
 
-  <!-- Use this to display some aspect of the Bulma css -->
-  <!-- Try to make the photos in the album slide along the page
-    or flip/rotate when the mouse hovers over them -->
-  <section class="hero is-primary">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title">
-          Photo Album
-        </h1>
+    <!-- Use this to display some aspect of the Bulma css -->
+    <!-- Try to make the photos in the album slide along the page
+      or flip/rotate when the mouse hovers over them -->
+    <div class="hero is-primary">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Photo Album
+          </h1>
+        </div>
       </div>
     </div>
-  </section>
 
-  <section class="hero is-large is-info">
+
+    <!-- This pushes the title to the top. -->
     <div class="hero-body">
+
       <!-- Container makes this have 20px margins on the sides. It also gives it a max width. -->
       <div class="container">
-        <!-- Commenting out for possible later use -->
-        <!--
-        <div class="tile is-ancestor">
-          <div class="tile is-vertical is-8">
-            <div class="tile">
-              <div class="tile is-parent">
-                <article class="tile is-child notification is-warning">
-                  <figure class="image is-square">
-                    <img src="http://placehold.it/640x480">
-                  </figure>
-                </article>
-                </div>
-              <div class="tile is-parent">
-                <article class="tile is-child notification is-primary">
-                  <figure class="image is-square">
-                    <img src="http://placehold.it/640x480">
-                  </figure>
-                </article>
-              </div>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification is-danger">
-                <figure class="image is-square">
-                  <img src="http://placehold.it/640x480">
-                </figure>
-              </article>
+
+        <!-- Creates buttons for pagination. -->
+        <!-- Does not place pagination at top of page on its own. -->
+        <nav class="pagination">
+          <a class="button">Previous</a>
+          <a class="button">Next Page</a>
+          <ul>
+            <li>
+              <a class="button">1</a>
+            </li>
+            <li>
+              ...
+            </li>
+            <li>
+              <a class="button">10</a>
+            </li>
+            <li>
+              <a class="button is-primary">11</a>
+            </li>
+            <li>
+              <a class="button">12</a>
+            </li>
+            <li>
+              ...
+            </li>
+            <li>
+              <a class="button">30</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- This creates the first of four rows. -->
+        <div class="tile is-ancestor notification is-success" style="margin-top:20px">
+
+          <!-- Create some padding for the gallery. -->
+          <div class="tile notification is-dark is-2">
+          </div>
+
+          <div class="tile is-parent notification is-warning is-2">
+            <div class="tile is-child notification is-danger">
+              <figure class="image is-64by64">
+                <img src="https://placeimg.com/128/128/any">
+              </figure>
             </div>
           </div>
-          <div class="tile is-parent">
-            <article class="tile is-child notification is-success">
-              <div class="content">
-                <p class="title">Tall tile</p>
-                <p class="subtitle">With even more content</p>
-                <div class="content">
-                </div>
+          <div class="tile is-parent notification is-warning is-2">
+            <div class="tile is-child notification is-danger">
+              <figure class="image is-64by64">
+                <img src="https://placeimg.com/128/128/any">
+              </figure>
+            </div>
+          </div>
+          <div class="tile is-parent notification is-warning is-2">
+            <div class="tile is-child notification is-danger">
+              <figure class="image is-64by64">
+                <img src="https://placeimg.com/128/128/any">
+              </figure>
+            </div>
+          </div>
+          <div class="tile is-parent notification is-warning is-2">
+            <div class="tile is-child notification is-danger">
+              <figure class="image is-64by64">
+                <img src="https://placeimg.com/128/128/any">
+              </figure>
+            </div>
+          </div>
+
+          <!-- Create some padding for the gallery. -->
+          <div class="tile notification is-dark is-2">
+          </div>
+
+        </div>
+
+        <!-- This creates the second and third of four rows. -->
+        <div class="tile is-ancestor notification is-success">
+
+          <!-- Create some padding for the gallery. -->
+          <div class="tile notification is-dark is-2">
+          </div>
+
+          <div class="tile is-parent is-vertical notification is-warning is-2">
+            <div class="tile is-child notification is-danger">
+              <figure class="image is-64by64">
+                <img src="https://placeimg.com/128/128/any">
+              </figure>
+            </div>
+            <div class="tile is-child notification is-danger">
+              <figure class="image is-64by64">
+                <img src="https://placeimg.com/128/128/any">
+              </figure>
+            </div>
+          </div>
+          <!-- This creates the large tile in the center. -->
+          <div class="tile is-parent notification is-warning is-4">
+            <div class="tile is-child notification is-danger">
+              <div class="tile is-child notification is-danger">
+                <figure class="image is-128by128">
+                  <img src="https://placeimg.com/256/256/any">
+                </figure>
               </div>
-            </article>
+            </div>
+          </div>
+          <div class="tile is-parent is-vertical notification is-warning is-2">
+            <div class="tile is-child notification is-danger">
+              <figure class="image is-64by64">
+                <img src="https://placeimg.com/128/128/any">
+              </figure>
+            </div>
+            <div class="tile is-child notification is-danger">
+              <figure class="image is-64by64">
+                <img src="https://placeimg.com/128/128/any">
+              </figure>
+            </div>
+          </div>
+
+          <!-- Create some padding for the gallery. -->
+          <div class="tile notification is-dark is-2">
+          </div>
+
+        </div>
+
+        <!-- This creates the fourth of four rows. -->
+        <div class="tile is-ancestor notification is-success">
+
+          <!-- Create some padding for the gallery. -->
+          <div class="tile notification is-dark is-2">
+          </div>
+
+          <div class="tile is-parent notification is-warning is-2">
+            <div class="tile is-child notification is-danger">
+              <figure class="image is-64by64">
+                <img src="https://placeimg.com/128/128/any">
+              </figure>
+            </div>
+          </div>
+          <div class="tile is-parent notification is-warning is-2">
+            <div class="tile is-child notification is-danger">
+              <figure class="image is-64by64">
+                <img src="https://placeimg.com/128/128/any">
+              </figure>
+            </div>
+          </div>
+          <div class="tile is-parent notification is-warning is-2">
+            <div class="tile is-child notification is-danger">
+              <figure class="image is-64by64">
+                <img src="https://placeimg.com/128/128/any">
+              </figure>
+            </div>
+          </div>
+          <div class="tile is-parent notification is-warning is-2">
+            <div class="tile is-child notification is-danger">
+              <figure class="image is-64by64">
+                <img src="https://placeimg.com/128/128/any">
+              </figure>
+            </div>
+          </div>
+
+          <!-- Create some padding for the gallery. -->
+          <div class="tile notification is-dark is-2">
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+      <!-- Try to change this so that no scrollbar is needed. -->
+      <!-- Do this by having the footer raise up when the mouse hovers over a box at the bottom. -->
+      <div class="hero-foot">
+        <!-- Container class gives indentations of 20px on the sides -->
+        <div class="container">
+          <div class="tabs is-centered">
+            <ul>
+              <li class="container">
+                Website made with Bulma by Tony Sax
+              </li>
+              <li class="container">
+                Bulma by Jeremy Thomas
+              </li>
+              <li class="container">
+                The source code is licensed MIT.
+              </li>
+            </ul>
           </div>
         </div>
-      -->
       </div>
+
     </div>
   </section>
-
-  <!-- Just using this to pad the photo page -->
-  <!-- Currently does not add padding if there is no content due to it being footer. -->
-  <section class="hero is-medium is-primary">
-    <div class="hero-foot">
-      <div class="container">
-      </div>
-    </div>
-  </section>
-
-  <!-- Try to change this so that no scrollbar is needed. -->
-  <!-- Do this by having the footer raise up when the mouse hovers over a box at the bottom. -->
-  <footer class="footer">
-    <!-- Container class gives indentations of 20px on the sides -->
-    <div class="container">
-      <div class="content has-text-centered">
-        <p>
-          Website by Tony Sax.
-          The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
-        </p>
-        <p>
-          <a class="icon" href="https://github.com/jgthms/bulma">
-            <i class="fa fa-github"></i>
-          </a>
-        </p>
-      </div>
-    </div>
-  </footer>
 
 </body>

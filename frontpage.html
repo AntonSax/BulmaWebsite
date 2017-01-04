@@ -1,3 +1,6 @@
+<!-- Make footer not be so spaced out -->
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,29 +26,36 @@
       <!-- Container makes this have 20px margins on the sides. It also gives it a max width. -->
       <div class="container">
         <nav class="nav has-shadow">
-          <div class="nav-left">
-            <!-- Create some margin/padding space from the left side -->
-            <a class="nav-item is-active" href="frontpage.html">
-              Home
-            </a>
-            <a class="nav-item" href="about.html">
-              About
-            </a>
-            <a class="nav-item" href="travel.html">
-              Travel
-            </a>
-            <a class="nav-item" href="projects.html">
-              Projects
-            </a>
-            <a class="nav-item" href="photos.html">
-              Photos
-            </a>
-            <!-- Here are some ideas to put in animations -->
-            <!-- Anything on that Dan guy's channel -->
-            <!-- Showing off animated progress bars from the Bulma css -->
-            <a class="nav-item" href="">
-              Animations
-            </a>
+          <div class="container">
+            <div class="nav-left">
+              <div class="nav-item">
+                TonySax.org
+              </div>
+            </div>
+            <div class="nav-right nav-menu">
+              <!-- Create some margin/padding space from the left side -->
+              <a class="nav-item is-active" href="frontpage.html">
+                Home
+              </a>
+              <a class="nav-item" href="about.html">
+                About
+              </a>
+              <a class="nav-item" href="travel.html">
+                Travel
+              </a>
+              <a class="nav-item" href="projects.html">
+                Projects
+              </a>
+              <a class="nav-item" href="file:///C:\Users\tony\Documents\Programming Practice\Websites\Bulma\alternate_pages\photos16x9.html">
+                Photos
+              </a>
+              <!-- Here are some ideas to put in animations -->
+              <!-- Anything on that Dan guy's channel -->
+              <!-- Showing off animated progress bars from the Bulma css -->
+              <a class="nav-item" href="">
+                Animations
+              </a>
+            </div>
           </div>
         </nav>
       </div>
@@ -58,34 +68,38 @@
           <img src="https://avatars3.githubusercontent.com/u/9059836?v=3&u=b0f193b34a08876842f70eb07ec3d3b1f49c8773&s=400" alt="Profile Pic of Tony Sax">
         </p>
         <h1 class="title">
-          Title
+          Tony Sax
         </h1>
         <h2 class="subtitle">
-          Subtitle
+          Bear's Hump, Waterton Lakes National Park, Alberta, Canada
         </h2>
+      </div>
+    </div>
+
+    <!-- Try to change this so that no scrollbar is needed. -->
+    <!-- Do this by having the footer raise up when the mouse hovers over a box at the bottom. -->
+    <div class="hero-foot">
+      <!-- Container class gives indentations of 20px on the sides -->
+      <div class="container">
+        <div class="tabs is-centered">
+          <ul>
+            <li class="container">
+              Website made with Bulma by Tony Sax
+            </li>
+            <li class="container">
+              Bulma by Jeremy Thomas
+            </li>
+            <li class="container">
+              The source code is licensed MIT.
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
   </section>
 
-  <!-- Try to change this so that no scrollbar is needed. -->
-  <!-- Do this by having the footer raise up when the mouse hovers over a box at the bottom. -->
-  <footer class="footer">
-    <!-- Container class gives indentations of 20px on the sides -->
-    <div class="container">
-      <div class="content has-text-centered">
-        <p>
-          Website by Tony Sax.
-          The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
-        </p>
-        <p>
-          <a class="icon" href="https://github.com/jgthms/bulma">
-            <i class="fa fa-github"></i>
-          </a>
-        </p>
-      </div>
-    </div>
-  </footer>
+
 
 </body>
 </html>

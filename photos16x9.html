@@ -1,0 +1,179 @@
+<!-- Put a pagination on this page -->
+<!-- Notification makes blocks a solid color. -->
+<!-- Remove colors from tile so that there is only red behind them. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="A website built with Bulma about Tony Sax">
+  <meta name="keywords" content="HTML, CSS">
+  <meta name="author" content="Tony Sax">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>HTML with Bulma</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="http://bulma.io/css/bulma-docs.css">
+
+</head>
+
+<body>
+  <!-- is-fullheight makes this section and its color the height of the computer screen. -->
+  <section class="hero is-fullheight is-info is-bold">
+    <!-- Hero-head makes this always at the top. -->
+    <div class="hero-head">
+      <!-- Container makes this have 20px margins on the sides. It also gives it a max width. -->
+      <div class="container">
+        <nav class="nav has-shadow">
+          <div class="container">
+            <div class="nav-left">
+              <div class="nav-item">
+                TonySax.org
+              </div>
+            </div>
+            <div class="nav-right nav-menu">
+            <!-- Create some margin/padding space from the left side -->
+            <a class="nav-item" href="file:///C:\Users\tony\Documents\Programming Practice\Websites\Bulma\frontpage.html">
+              Home
+            </a>
+            <a class="nav-item" href="file:///C:\Users\tony\Documents\Programming Practice\Websites\Bulma\about.html">
+              About
+            </a>
+            <a class="nav-item" href="file:///C:\Users\tony\Documents\Programming Practice\Websites\Bulma\travel.html">
+              Travel
+            </a>
+            <a class="nav-item" href="file:///C:\Users\tony\Documents\Programming Practice\Websites\Bulma\projects.html">
+              Projects
+            </a>
+            <a class="nav-item is-active" href="fill:///C:\Users\tony\Documents\Programming Practice\Websites\Bulma\alternate_pages\photos16x9.html">
+              Photos
+            </a>
+            <a class="nav-item" href="#">
+              Animations
+            </a>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Use this to display some aspect of the Bulma css -->
+    <!-- Try to make the photos in the album slide along the page
+      or flip/rotate when the mouse hovers over them -->
+    <div class="hero is-primary">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Photo Album
+          </h1>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- This pushes the title to the top. -->
+    <div class="hero-body">
+
+      <!-- Container makes this have 20px margins on the sides. It also gives it a max width. -->
+      <div class="container">
+
+        <!-- Creates buttons for pagination. -->
+        <!-- Does not place pagination at top of page on its own. -->
+        <nav class="pagination">
+          <a class="button">Previous</a>
+          <a class="button">Next Page</a>
+          <ul>
+            <li>
+              <a class="button">1</a>
+            </li>
+            <li>
+              ...
+            </li>
+            <li>
+              <a class="button">10</a>
+            </li>
+            <li>
+              <a class="button is-primary">11</a>
+            </li>
+            <li>
+              <a class="button">12</a>
+            </li>
+            <li>
+              ...
+            </li>
+            <li>
+              <a class="button">30</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- This creates the second and third of four rows. -->
+        <div class="tile is-ancestor" style="margin-top:20px;">
+
+          <div class="tile is-parent is-vertical is-2">
+            <div class="tile is-child notification">
+              <figure class="image is-1by1">
+                <img src="https://placeimg.com/256/256/any">
+              </figure>
+            </div>
+            <div class="tile is-child notification">
+              <figure class="image is-1by1">
+                <img src="https://placeimg.com/256/256/any">
+              </figure>
+            </div>
+          </div>
+          <!-- This creates the large tile in the center. -->
+          <div class="tile is-parent is-8">
+            <div class="tile is-child notification">
+              <figure class="image is-16by9">
+                <img src="https://placeimg.com/960/540/any">
+              </figure>
+            </div>
+          </div>
+          <div class="tile is-parent is-vertical is-2">
+            <div class="tile is-child notification">
+              <figure class="image is-1by1">
+                <img src="https://placeimg.com/256/256/any">
+              </figure>
+            </div>
+            <div class="tile is-child notification">
+              <figure class="image is-1by1">
+                <img src="https://placeimg.com/256/256/any">
+              </figure>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+      <!-- Try to change this so that no scrollbar is needed. -->
+      <!-- Do this by having the footer raise up when the mouse hovers over a box at the bottom. -->
+      <div class="hero-foot">
+        <!-- Container class gives indentations of 20px on the sides -->
+        <div class="container">
+          <div class="tabs is-centered">
+            <ul>
+              <li class="container">
+                Website made with Bulma by Tony Sax
+              </li>
+              <li class="container">
+                Bulma by Jeremy Thomas
+              </li>
+              <li class="container">
+                The source code is licensed MIT.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</body>

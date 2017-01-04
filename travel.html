@@ -17,13 +17,19 @@
 
 <body>
   <!-- is-fullheight makes this section and its color the height of the computer screen. -->
-  <section class="hero is-fullheight is-info">
+  <section class="hero is-fullheight is-info is-bold">
     <!-- Hero-head makes this always at the top. -->
     <div class="hero-head">
       <!-- Container makes this have 20px margins on the sides. It also gives it a max width. -->
       <div class="container">
         <nav class="nav has-shadow">
-          <div class="nav-left">
+          <div class="container">
+            <div class="nav-left">
+              <div class="nav-item">
+                TonySax.org
+              </div>
+            </div>
+            <div class="nav-right nav-menu">
             <!-- Create some margin/padding space from the left side -->
             <a class="nav-item" href="frontpage.html">
               Home
@@ -31,13 +37,13 @@
             <a class="nav-item" href="about.html">
               About
             </a>
-            <a class="nav-item is-active" href="travel.html">
+            <a class="nav-item is-active" href="file:///C:\Users\tony\Documents\Programming Practice\Websites\Bulma\travel.html">
               Travel
             </a>
             <a class="nav-item" href="projects.html">
               Projects
             </a>
-            <a class="nav-item" href="photos.html">
+            <a class="nav-item" href="file:///C:\Users\tony\Documents\Programming Practice\Websites\Bulma\alternate_pages\photos16x9.html">
               Photos
             </a>
             <a class="nav-item" href="">
@@ -48,25 +54,28 @@
       </div>
     </div>
 
-  </section>
 
-  <!-- Try to change this so that no scrollbar is needed. -->
-  <!-- Do this by having the footer raise up when the mouse hovers over a box at the bottom. -->
-  <footer class="footer">
-    <!-- Container class gives indentations of 20px on the sides -->
-    <div class="container">
-      <div class="content has-text-centered">
-        <p>
-          Website by Tony Sax.
-          The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
-        </p>
-        <p>
-          <a class="icon" href="https://github.com/jgthms/bulma">
-            <i class="fa fa-github"></i>
-          </a>
-        </p>
+    <!-- Try to change this so that no scrollbar is needed. -->
+    <!-- Do this by having the footer raise up when the mouse hovers over a box at the bottom. -->
+    <div class="hero-foot">
+      <!-- Container class gives indentations of 20px on the sides -->
+      <div class="container">
+        <div class="tabs is-centered">
+          <ul>
+            <li class="container">
+              Website made with Bulma by Tony Sax
+            </li>
+            <li class="container">
+              Bulma by Jeremy Thomas
+            </li>
+            <li class="container">
+              The source code is licensed MIT.
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-  </footer>
+
+  </section>
 
 </body>
