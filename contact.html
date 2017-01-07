@@ -1,5 +1,6 @@
 <!-- Make footer not be so spaced out -->
-<!-- Need to write javascript class toggle for the modal. -->
+<!-- Current icons for the title are the globe and the snowflake. -->
+
 
 <!DOCTYPE html>
 <html>
@@ -12,8 +13,6 @@
 
   <title>TonySax.org - HTML with Bulma</title>
 
-  <link rel="shortcut icon" href="http://fontawesome.io/icon/snowflake-o/" />
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="http://bulma.io/css/bulma-docs.css">
@@ -22,7 +21,7 @@
 
 <body>
   <!-- is-fullheight makes this section and its color the height of the computer screen. -->
-  <section class="hero is-fullheight is-info">
+  <section class="hero is-fullheight is-info is-bold">
     <!-- Hero-head makes this always at the top. -->
     <div class="hero-head">
       <!-- Container makes this have 20px margins on the sides. It also gives it a max width. -->
@@ -36,7 +35,7 @@
             </div>
             <div class="nav-right nav-menu">
               <!-- Create some margin/padding space from the left side -->
-              <a class="nav-item is-active" href="frontpage.html">
+              <a class="nav-item" href="frontpage.html">
                 Home
               </a>
               <a class="nav-item" href="about.html">
@@ -59,7 +58,7 @@
                 Animations
               </a>
               -->
-              <a class="nav-item" href="file:///C:\Users\tony\Documents\Programming Practice\Websites\Bulma\contact.html">
+              <a class="nav-item is-active" href="file:///C:\Users\tony\Documents\Programming Practice\Websites\Bulma\contact.html">
                 Contact
               </a>
             </div>
@@ -68,41 +67,7 @@
       </div>
     </div>
 
-    <!-- Modal to introduce user to my website. -->
-    <div class="modal" id="frontModal">
-      <div class="modal-background"></div>
-      <div class="modal-content">
-        <article class="message">
-          <div class="message-header">
-            <p>This is a Welcome Message!</p>
-          </div>
-          <div class="message-body">
-            HEY! This is one of my first websites and is meant to be a demonstration of my coding skills.<br>
-            Unfortunately you can't close out of this window because I haven't learned javascript yet, so the rest of the site is inaccessible to you.*<br>
-            <br>
-            Come back later!<br>
-            <br>
-            * If you really want to visit the rest of the site. Try guessing the name of the pages in the url!
-          </div>
-        </article>
-      </div>
-      <button class="modal-close" data-toggle="modal" data-target="#frontModal"></button>
-    </div>
 
-    <!-- Hero content: will be in the middle -->
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <p>
-          <img src="https://avatars3.githubusercontent.com/u/9059836?v=3&u=b0f193b34a08876842f70eb07ec3d3b1f49c8773&s=400" alt="Profile Pic of Tony Sax">
-        </p>
-        <h1 class="title">
-          Tony Sax
-        </h1>
-        <h2 class="subtitle">
-          Bear's Hump, Waterton Lakes National Park, Alberta, Canada
-        </h2>
-      </div>
-    </div>
 
     <!-- Try to change this so that no scrollbar is needed. -->
     <!-- Do this by having the footer raise up when the mouse hovers over a box at the bottom. -->

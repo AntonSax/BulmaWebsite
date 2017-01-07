@@ -1,5 +1,11 @@
-<!-- Could put links to social media on this page if its not in the header -->
-
+<!-- Could put links to social media on this page if its not in the footer -->
+<!-- Could make this up of a menu on the left to cycle through seperate stages-of-life/categories. -->
+<!-- Could also use more tabs instead of a menu. -->
+<!-- A Content class would be a good idea. -->
+<!-- Notifications could be used to add contrast. -->
+<!-- Think about making it look like LoL champion reveal pages. -->
+<!-- Use a block quote. -->
+<!-- <hr> creates the line ___ break seen on the bulma documentation pages. -->
 
 <!DOCTYPE html>
 <html>
@@ -10,7 +16,7 @@
   <meta name="author" content="Tony Sax">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>HTML with Bulma</title>
+  <title>TonySax.org - HTML with Bulma</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
@@ -20,7 +26,7 @@
 
 <body>
   <!-- is-fullheight makes this section and its color the height of the computer screen. -->
-  <section class="hero is-fullheight is-info is-bold">
+  <section class="hero is-info">
     <!-- Hero-head makes this always at the top. -->
     <div class="hero-head">
       <!-- Container makes this have 20px margins on the sides. It also gives it a max width. -->
@@ -48,8 +54,13 @@
               <a class="nav-item" href="file:///C:\Users\tony\Documents\Programming Practice\Websites\Bulma\alternate_pages\photos16x9.html">
                 Photos
               </a>
+              <!--
               <a class="nav-item" href="">
                 Animations
+              </a>
+              -->
+              <a class="nav-item" href="file:///C:\Users\tony\Documents\Programming Practice\Websites\Bulma\contact.html">
+                Contact
               </a>
             </div>
           </div>
@@ -57,6 +68,181 @@
       </div>
     </div>
 
+    <!-- Places a hero inside of the fullscreen hero -->
+    <div class="hero is-primary is-bold">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            About
+          </h1>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Make into two seperate heros so that colors can be seperated nicely. -->
+  <!-- Will need colums to seperate menu from content. -->
+  <section class="hero is-dark is-bold">
+    <div class="hero-body">
+      <!-- Removing the "container" class pushes everything to edge of screen. -->
+      <div class="container is-fluid">
+
+        <!-- Columns to split page into menu and content. -->
+        <div class="columns is-mobile">
+          <div class="column is-2">
+
+            <!-- Where the menu is on left hand side. -->
+            <!-- Add in menu labels when you have content decided. -->
+            <aside class="menu is-pulled-left" style="position: fixed">
+              <ul class="menu-list">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#work_experience">Work Experience</a></li>
+              </ul>
+              <ul class="menu-list">
+                <li><a href="#places">Places I've Visted</a></li>
+                <li>
+                  <a class="is-active" href="#hobbies">Hobbies</a>
+                  <ul>
+                    <li><a href="#hobbies">Piano</a></li>
+                    <li><a href="#hobbies">Running</a></li>
+                    <!-- Maybe make another sublist of videogames I like? -->
+                    <li><a href="#hobbies">Videogames</a></li>
+                    <li><a href="#hobbies">Amateur Photography</a></li>
+                  </ul>
+                </li>
+                <li><a href="#family">Family</a></li>
+                <li><a href="#things">Other Cool Things</a></li>
+              </ul>
+            </aside>
+
+          </div>
+
+          <!-- 2nd Column -->
+          <div class="column">
+
+            <!-- Content on right hand side. -->
+              <div class="message-body content" id="overview">
+                <h1>Overview</h1>
+                <hr>
+                <p>Hi! My name is Tony Sax, and thanks for visiting my website.</p>
+                <p>This is going to be a giant overview.</p><br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+              </div>
+              <div class="message-body content" id="education">
+                <h1>Education</h1>
+                <hr>
+                <p>This is where my education will go.</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+              </div>
+              <div class="message-body content" id="work_experience">
+                <h1>Work Experience</h1>
+                <hr>
+                <p>This is where my work experience will go.</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+              </div>
+              <div class="message-body content" id="places">
+                <h1>Place I've Visited</h1>
+                <hr>
+                <p>This is where my travels will go.</p>
+                <ol>
+                  <li>Moscow</li>
+                  <li>Bangkok</li>
+                </ol>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+              </div>
+              <div class="message-body content" id="hobbies">
+                <h1>Hobbies</h1>
+                <hr>
+                <p>This is where my hobbies will go.</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+              </div>
+              <div class="message-body content" id="family">
+                <h1>Family</h1>
+                <hr>
+                <p>This is where my family will go.</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+              </div>
+              <div class="message-body content" id="things">
+                <h1>Other Cool Things</h1>
+                <hr>
+                <p>This is where other cool things will go.</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+              </div>
+
+
+          </div>
+          <!-- End of columns class. -->
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="hero is-info">
     <!-- Try to change this so that no scrollbar is needed. -->
     <!-- Do this by having the footer raise up when the mouse hovers over a box at the bottom. -->
     <div class="hero-foot">
@@ -77,7 +263,6 @@
         </div>
       </div>
     </div>
-
   </section>
 
 </body>
