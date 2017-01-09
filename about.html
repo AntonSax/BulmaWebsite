@@ -6,6 +6,7 @@
 <!-- Think about making it look like LoL champion reveal pages. -->
 <!-- Use a block quote. -->
 <!-- <hr> creates the line ___ break seen on the bulma documentation pages. -->
+<!-- Use a picture of yourself as a child for "work experience". -->
 
 <!DOCTYPE html>
 <html>
@@ -39,19 +40,19 @@
               </div>
             </div>
             <div class="nav-right nav-menu">
-              <a class="nav-item" href="frontpage.html">
+              <a class="nav-item" href="home.html">
                 Home
               </a>
-              <a class="nav-item is-active" href="file:///C:\Users\tony\Documents\Programming Practice\Websites\Bulma\about.html">
+              <a class="nav-item is-active" href="about.html">
                 About
               </a>
               <a class="nav-item" href="travel.html">
                 Travel
               </a>
-              <a class="nav-item" href="file:///C:\Users\tony\Documents\Programming Practice\Websites\Bulma\projects.html">
+              <a class="nav-item" href="projects.html">
                 Projects
               </a>
-              <a class="nav-item" href="file:///C:\Users\tony\Documents\Programming Practice\Websites\Bulma\alternate_pages\photos16x9.html">
+              <a class="nav-item" href="photos16x9.html">
                 Photos
               </a>
               <!--
@@ -59,7 +60,7 @@
                 Animations
               </a>
               -->
-              <a class="nav-item" href="file:///C:\Users\tony\Documents\Programming Practice\Websites\Bulma\contact.html">
+              <a class="nav-item" href="contact.html">
                 Contact
               </a>
             </div>
@@ -89,27 +90,30 @@
       <div class="container is-fluid">
 
         <!-- Columns to split page into menu and content. -->
+        <!-- 1st Row -->
         <div class="columns is-mobile">
+
+          <!-- 1st Column -->
           <div class="column is-2">
 
             <!-- Where the menu is on left hand side. -->
             <!-- Add in menu labels when you have content decided. -->
             <aside class="menu is-pulled-left" style="position: fixed">
-              <ul class="menu-list">
+              <ul class="menu-list" style="color: #cccccc">
                 <li><a href="#overview">Overview</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#work_experience">Work Experience</a></li>
               </ul>
-              <ul class="menu-list">
+              <ul class="menu-list" style="color: #cccccc">
                 <li><a href="#places">Places I've Visted</a></li>
                 <li>
-                  <a class="is-active" href="#hobbies">Hobbies</a>
+                  <a href="#hobbies">Hobbies</a>
                   <ul>
-                    <li><a href="#hobbies">Piano</a></li>
-                    <li><a href="#hobbies">Running</a></li>
+                    <li><a href="#piano">Piano</a></li>
+                    <li><a href="#running">Running</a></li>
                     <!-- Maybe make another sublist of videogames I like? -->
-                    <li><a href="#hobbies">Videogames</a></li>
-                    <li><a href="#hobbies">Amateur Photography</a></li>
+                    <li><a href="#photography">Photography</a></li>
+                    <li><a href="#videogames">Videogames</a></li>
                   </ul>
                 </li>
                 <li><a href="#family">Family</a></li>
@@ -120,131 +124,223 @@
           </div>
 
           <!-- 2nd Column -->
-          <div class="column">
+          <div class="column is-4">
+              <img src="http://i.imgur.com/zHRJ61e.jpg" alt="Profile Pic of Tony Sax" style="max-height: 400px; border-radius: 100%">
+          </div>
+
+          <!-- 3rd Column -->
+          <!-- Keep this at least at an offset of 1. -->
+          <div class="column is-6">
 
             <!-- Content on right hand side. -->
-              <div class="message-body content" id="overview">
-                <h1>Overview</h1>
+            <div class="message-body content" style="color: #cccccc; height: 28em">
+              <div id="overview">
+                <h1 style="color: #cccccc">Overview</h1>
                 <hr>
-                <p>Hi! My name is Tony Sax, and thanks for visiting my website.</p>
-                <p>This is going to be a giant overview.</p><br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
+                <p>Hello World!</p>
+                <p>My name is Tony Sax and I'm a 20 year old student studying computer science at the Missouri University of Science and Technology.
+                    This is my about page.</p>
+                <p>There is a lot of text on this page, but at least scroll down to look at the pictures!</p>
               </div>
-              <div class="message-body content" id="education">
-                <h1>Education</h1>
-                <hr>
-                <p>This is where my education will go.</p>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-              </div>
-              <div class="message-body content" id="work_experience">
-                <h1>Work Experience</h1>
-                <hr>
-                <p>This is where my work experience will go.</p>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-              </div>
-              <div class="message-body content" id="places">
-                <h1>Place I've Visited</h1>
-                <hr>
-                <p>This is where my travels will go.</p>
-                <ol>
-                  <li>Moscow</li>
-                  <li>Bangkok</li>
-                </ol>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-              </div>
-              <div class="message-body content" id="hobbies">
-                <h1>Hobbies</h1>
-                <hr>
-                <p>This is where my hobbies will go.</p>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-              </div>
-              <div class="message-body content" id="family">
-                <h1>Family</h1>
-                <hr>
-                <p>This is where my family will go.</p>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-              </div>
-              <div class="message-body content" id="things">
-                <h1>Other Cool Things</h1>
-                <hr>
-                <p>This is where other cool things will go.</p>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-              </div>
+            </div>
+          </div>
+        </div>
 
+        <!-- 2nd Row -->
+        <div class="columns is-mobile">
+
+          <!-- 2nd Row "2nd Column" -->
+          <div class="column is-offset-2 is-4">
+            <img src="http://imgur.com/OTGz7SO.jpg" alt="Picture of MST Campus" style="border-radius: 100%">
+          </div>
+
+          <!-- 2nd Row "3rd Column" -->
+          <div class="column is-6">
+            <div class="content" style="color: #cccccc">
+              <div id="education">
+                <h1 style="color: #cccccc">Education</h1>
+                <hr>
+                <p>I graduated from Oakville High School in 2015, and am currently attending the Missouri University of Science and Technology
+                in Rolla, MO. There, I am studying in order to obtain a B.S. in computer science. I am also currently in my 2nd year.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3rd Row -->
+        <div class="columns is-mobile">
+
+          <!-- 3rd Row "2nd Column" -->
+          <div class="column is-offset-2 is-4">
+            <img src="http://imgur.com/7y6B1L2.jpg" alt="Picture of Graduation" style="border-radius: 100%">
+          </div>
+
+          <!-- 3rd Row "3rd Column" -->
+          <div class="column is-6">
+            <div class="content" style="color: #cccccc">
+              <div id="work_experience">
+                <h1 style="color: #cccccc">Work Experience</h1>
+                <hr>
+                <p>I've worked two jobs. The first was at <strong>Nottelmann's Music Co.</strong> from December of 2013 up until August of 2015.
+                My second job was at <strong>Dad and Lad Lawncare</strong> from May of 2016 through July 2016.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4th Row -->
+        <div class="columns is-mobile">
+
+          <!-- 4th Row "2nd Column" -->
+          <div class="column is-offset-2 is-4">
+            <img src="http://imgur.com/B5psrIG.jpg" alt="Picture of Goose Island" style="border-radius: 100%">
+          </div>
+
+          <!-- 4th Row "3rd Column" -->
+          <div class="column is-6">
+            <div class="content" style="color: #cccccc">
+              <div id="places">
+                <h1 style="color: #cccccc">Place I've Visited</h1>
+                <hr>
+                <p>My family has taken a lot of vacations!</p>
+                <p>These are some of my favorite locations.</p>
+                <ol>
+                  <li>Glacier National Park</li>
+                  <li>Yosemite National Park</li>
+                  <li>Yellowstone National Park</li>
+                  <li>Arches National Park</li>
+                  <li>Saguaro National Park</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5th Row -->
+        <div class="columns is-mobile">
+
+          <!-- 5th Row "2nd Column" -->
+          <div class="column is-offset-2 is-4">
+            <img src="http://imgur.com/Z83JFZ8.jpg" alt="Picture of Piano" style="border-radius: 100%">
+            <img src="http://imgur.com/Lzf02h7.jpg" alt="Picture of Glacier National Park Mountains" style="border-radius: 100%">
+            <img src="http://imgur.com/5qIc1Hf.jpg" alt="Picture of Red Bus" style="border-radius: 100%">
+            <!--
+            <img src="http://imgur.com/QozwvEU.jpg" alt="Picture of Lake McDonald" style="border-radius: 100%">
+          -->
 
           </div>
-          <!-- End of columns class. -->
+
+          <!-- 5th Row "3rd Column" -->
+          <div class="column is-6">
+            <div class="content" style="color: #cccccc">
+              <div id="hobbies">
+                <h1 style="color: #cccccc">Hobbies</h1>
+                <hr>
+                <p>Wow! Look at all these hobbies!</p>
+
+                <!-- A 12 column system works within a column... -->
+                <div class="column is-offset-1 is-10">
+
+                  <h2 id="piano" style="color: #cccccc">Piano</h2>
+                  <p>I've been playing piano since I was 8 years old. I took lessons for 6 years and stopped upon starting high school.</p>
+                  <p>Some of my favorite songs to play are <strong>Rather Be</strong> by Clean Bandit,
+                    <strong>Don't Stop Me Now</strong> by Queen,
+                    and <strong>Maple Leaf Rag</strong> by Scott Joplin.</p>
+
+                  <hr>
+
+                  <h2 id="running" style="color: #cccccc">Running</h2>
+                  <p>I ran cross country and track in both middle school and high school. My best 5k time is 18:47.</p>
+                  <p>The best thing cross country did for me was instill an enjoyment in an activity I still do today.</p>
+                  <p>I have never run a marathon, but maybe I'll do that someday.</p>
+
+                  <hr>
+
+                  <h2 id="photography" style="color: #cccccc">Amateur Photography</h2>
+                  <p>One of my biggest interests is in making Timelapses. Taking cool pictures is just a byproduct of that art.</p>
+                  <p>I've currently made 2 timelapses of what I see outside my dorm windows and I'm always working on a "selfie" timelapse.
+                      These can be seen on my instagram and youtube channel.</p>
+                  <a class="button is-info is-hovered" style="margin-left: 40%" href="contact.html">Timelapses</a>
+
+                  <hr>
+
+                  <h2 id="videogames" style="color: #cccccc">Videogames</h2>
+                  <p>I've played a lot of games. Here are some of the games I still play today.</p>
+                  <ul>
+                    <li>League of Legends</li>
+                    <li>Pokemon</li>
+                    <li>Civilization 5</li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6th Row -->
+        <div class="columns is-mobile">
+
+          <!-- 6th Row "2nd Column" -->
+          <div class="column is-offset-2 is-4">
+            <img src="http://imgur.com/sF7wqC9.jpg" alt="Picture of Family" style="border-radius: 100%">
+          </div>
+
+          <!-- 6th Row "3rd Column" -->
+          <div class="column is-6">
+            <div class="content" style="color: #cccccc">
+              <div id="family">
+                <h1 style="color: #cccccc">Family</h1>
+                <hr>
+                <h4 style="color: #cccccc">This is my family!</h4>
+                <p> From left to right is my brother, my dad, <strong>me</strong>, my mother, and my sister.</p>
+                <article id="fun_fact" class="message is-info" style="margin-left: 10%; width: 75%">
+                  <div class="message-header">
+                    <p>Fun Facts</p>
+                  </div>
+                  <div class="message-body">
+                    My parents share the same birthday and my brother and sister are twins.
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7th Row -->
+        <div class="columns is-mobile">
+
+          <!-- 7th Row "2nd Column" -->
+          <div class="column is-offset-2 is-4">
+            <img src="http://imgur.com/vtvXr6w.jpg" alt="Picture of Flower" style="border-radius: 100%">
+          </div>
+
+          <!-- 7th Row "3rd Column" -->
+          <div class="column is-6">
+            <div class="content" style="color: #cccccc">
+              <div id="things">
+                <h1 style="color: #cccccc">Other Cool Things</h1>
+                <hr>
+                <p>There are so many cool things about me I don't know what to put here!</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
     </div>
-  </section>
 
-
-  <section class="hero is-info">
-    <!-- Try to change this so that no scrollbar is needed. -->
-    <!-- Do this by having the footer raise up when the mouse hovers over a box at the bottom. -->
+    <!-- Footer is in the same section as body so that the footer is the same color. -->
     <div class="hero-foot">
       <!-- Container class gives indentations of 20px on the sides -->
       <div class="container">

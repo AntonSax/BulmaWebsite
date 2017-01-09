@@ -11,7 +11,7 @@
   <meta name="author" content="Tony Sax">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>HTML with Bulma</title>
+  <title>TonySax.org - HTML with Bulma</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
@@ -35,23 +35,28 @@
             </div>
             <div class="nav-right nav-menu">
             <!-- Create some margin/padding space from the left side -->
-            <a class="nav-item" href="file:///C:\Users\tony\Documents\Programming Practice\Websites\Bulma\frontpage.html">
+            <a class="nav-item" href="home.html">
               Home
             </a>
-            <a class="nav-item" href="file:///C:\Users\tony\Documents\Programming Practice\Websites\Bulma\about.html">
+            <a class="nav-item" href="about.html">
               About
             </a>
-            <a class="nav-item" href="file:///C:\Users\tony\Documents\Programming Practice\Websites\Bulma\travel.html">
+            <a class="nav-item" href="travel.html">
               Travel
             </a>
-            <a class="nav-item" href="file:///C:\Users\tony\Documents\Programming Practice\Websites\Bulma\projects.html">
+            <a class="nav-item" href="projects.html">
               Projects
             </a>
-            <a class="nav-item is-active" href="fill:///C:\Users\tony\Documents\Programming Practice\Websites\Bulma\alternate_pages\photos16x9.html">
+            <a class="nav-item is-active" href="photos16x9.html">
               Photos
             </a>
-            <a class="nav-item" href="#">
+            <!--
+            <a class="nav-item" href="">
               Animations
+            </a>
+            -->
+            <a class="nav-item" href="contact.html">
+              Contact
             </a>
           </div>
         </nav>
@@ -61,7 +66,7 @@
     <!-- Use this to display some aspect of the Bulma css -->
     <!-- Try to make the photos in the album slide along the page
       or flip/rotate when the mouse hovers over them -->
-    <div class="hero is-primary">
+    <div class="hero is-primary is-bold">
       <div class="hero-body">
         <div class="container">
           <h1 class="title">
@@ -80,30 +85,30 @@
 
         <!-- Creates buttons for pagination. -->
         <!-- Does not place pagination at top of page on its own. -->
-        <nav class="pagination">
-          <a class="button">Previous</a>
-          <a class="button">Next Page</a>
-          <ul>
+        <nav class="pagination is-centered">
+          <a class="pagination-previous">Previous</a>
+          <a class="pagination-next">Next Page</a>
+          <ul class="pagination-list">
             <li>
-              <a class="button">1</a>
+              <a class="pagination-link">1</a>
             </li>
             <li>
-              ...
+              <span class="pagination-ellipsis">...</span>
             </li>
             <li>
-              <a class="button">10</a>
+              <a class="pagination-link">10</a>
             </li>
             <li>
-              <a class="button is-primary">11</a>
+              <a class="pagination-link is-current">11</a>
             </li>
             <li>
-              <a class="button">12</a>
+              <a class="pagination-link">12</a>
             </li>
             <li>
-              ...
+              <span class="pagination-ellipsis">...</span>
             </li>
             <li>
-              <a class="button">30</a>
+              <a class="pagination-link">30</a>
             </li>
           </ul>
         </nav>
