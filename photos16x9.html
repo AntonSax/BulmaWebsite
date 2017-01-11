@@ -3,7 +3,7 @@
 <!-- Remove colors from tile so that there is only red behind them. -->
 
 <!DOCTYPE html>
-<html style="overflow: hidden">
+<html style="overflow: auto">
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="A website built with Bulma about Tony Sax">
@@ -33,6 +33,12 @@
                 TonySax.org
               </div>
             </div>
+            <!-- The spans inside just make the bars for the menu icon. -->
+            <span class="nav-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
             <div class="nav-right nav-menu">
             <!-- Create some margin/padding space from the left side -->
             <a class="nav-item" href="home.html">
@@ -69,7 +75,8 @@
     <div class="hero is-primary is-bold">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title">
+          <!-- The "margin-left" fixes the difference between the nav and the title. -->
+          <h1 class="title" style="margin-left: 10px">
             Photo Gallery
           </h1>
         </div>
@@ -114,9 +121,11 @@
         </nav>
 
         <!-- This creates the second and third of four rows. -->
-        <div class="tile is-ancestor" style="margin-top:20px;">
+        <!-- Don't use the "is-flex-mobile" modifier. -->
+        <!-- The "is-____-mobile" modifier works. -->
+        <div class="tile is-ancestor is-mobile" style="margin-top:20px;">
 
-          <div class="tile is-parent is-vertical is-2" style="padding-top: 42px; padding-bottom: 42px">
+          <div class="tile is-parent is-vertical is-2 is-hidden-mobile" style="padding-top: 42px; padding-bottom: 42px">
             <div class="tile is-child notification" style="padding: 5px 5px 5px 5px">
               <figure class="image is-1by1">
                 <img src="https://placeimg.com/256/256/any">
@@ -129,14 +138,15 @@
             </div>
           </div>
           <!-- This creates the large tile in the center. -->
-          <div class="tile is-parent is-8">
+          <!-- The "is-inline-tablet" and "is-inline-block-tablet" and "is-block-tablet" modifiers works best here. -->
+          <div class="tile is-parent is-8 is-inline-block-tablet">
             <div class="tile is-child notification" style="padding: 5px 5px 5px 5px">
               <figure class="image is-16by9">
                 <img src="https://placeimg.com/960/540/any">
               </figure>
             </div>
           </div>
-          <div class="tile is-parent is-vertical is-2" style="padding-top: 42px; padding-bottom: 42px">
+          <div class="tile is-parent is-vertical is-2 is-hidden-mobile" style="padding-top: 42px; padding-bottom: 42px">
             <div class="tile is-child notification" style="padding: 5px 5px 5px 5px">
               <figure class="image is-1by1">
                 <img src="https://placeimg.com/256/256/any">

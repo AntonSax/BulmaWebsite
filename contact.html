@@ -3,7 +3,7 @@
 
 
 <!DOCTYPE html>
-<html style="overflow: hidden">
+<html style="overflow: auto">
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="A website built with Bulma about Tony Sax">
@@ -33,6 +33,12 @@
                 TonySax.org
               </div>
             </div>
+            <!-- The spans inside just make the bars for the menu icon. -->
+            <span class="nav-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
             <div class="nav-right nav-menu">
               <!-- Create some margin/padding space from the left side -->
               <a class="nav-item" href="home.html">
@@ -68,40 +74,75 @@
     </div>
 
     <!-- Places a hero inside of the fullscreen hero. Not creating a new hero prevents from using a new color. -->
+    <!-- Styling is to mimic the size of the other title bars. -->
     <div class="hero is-primary is-bold" style="padding: 42px 0px 42px 0px">
       <div class="hero-head">
         <div class="container">
-          <h1 class="title">
+          <!-- The "margin-left" fixes the difference between the nav and the title. -->
+          <h1 class="title" style="margin-left: 10px">
             Contact
           </h1>
         </div>
       </div>
     </div>
 
-    <div class="hero-body has-text-centered" style="word-spacing: 100px">
-      <div class="container" style="margin-top: -200px">
-          <!-- Reddit, snapchat, spotify, steam, tumblr, twitch, soundcloud, pinterest, vimeo, trello, first-order -->
-          <a href="https://plus.google.com/100394278556451458535">
-            <i class="fa fa-google-plus-official" style="font-size: 70px"></i>
-          </a>
-          <a href="https://twitter.com/saxanton">
-            <i class="fa fa-twitter" style="font-size: 70px"></i>
-          </a>
-          <a href="https://www.facebook.com/tony.sax.5">
-            <i class="fa fa-facebook-official" style="font-size: 70px;"></i>
-          </a>
-          <a href="https://www.instagram.com/tony.sax.5">
-            <i class="fa fa-instagram" style="font-size: 70px"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/tony-sax-5907b6106">
-            <i class="fa fa-linkedin-square" style="font-size: 70px"></i>
-          </a>
-          <a href="https://www.youtube.com/channel/UCTYmxTk-rr85WkhlMaY8x3A">
-            <i class="fa fa-youtube" style="font-size: 70px"></i>
-          </a>
-          <a href="https://github.com/AntonSax">
-            <i class="fa fa-github" style="font-size: 70px"></i>
-          </a>
+    <!-- Reddit, snapchat, spotify, steam, tumblr, twitch, soundcloud, pinterest, vimeo, trello, first-order -->
+    <!-- Don't need word-spacing when there are columns. -->
+    <div class="hero-body has-text-centered">
+      <div class="container">
+        <!-- Could alternatively make these tiles. -->
+        <!-- Don't use "is-flex" -->
+        <div class="tile is-ancestor">
+          <div class="tile is-parent is-inline-flex-mobile">
+            <article class="tile is-child">
+              <a href="https://plus.google.com/100394278556451458535">
+                <i class="fa fa-google-plus-official" style="font-size: 70px"></i>
+              </a>
+            </article>
+          </div>
+          <div class="tile is-parent is-inline-flex-mobile">
+            <article class="tile is-child">
+              <a href="https://twitter.com/saxanton">
+                <i class="fa fa-twitter" style="font-size: 70px"></i>
+              </a>
+            </article>
+          </div>
+          <div class="tile is-parent is-inline-flex-mobile">
+            <article class="tile is-child">
+              <a href="https://www.facebook.com/tony.sax.5">
+                <i class="fa fa-facebook-official" style="font-size: 70px;"></i>
+              </a>
+            </article>
+          </div>
+          <div class="tile is-parent is-inline-flex-mobile">
+            <article class="tile is-child">
+              <a href="https://www.instagram.com/tony.sax.5">
+                <i class="fa fa-instagram" style="font-size: 70px"></i>
+              </a>
+            </article>
+          </div>
+          <div class="tile is-parent is-inline-flex-mobile">
+            <article class="tile is-child">
+              <a href="https://www.linkedin.com/in/tony-sax-5907b6106">
+                <i class="fa fa-linkedin-square" style="font-size: 70px"></i>
+              </a>
+            </article>
+          </div>
+          <div class="tile is-parent is-inline-flex-mobile">
+            <article class="tile is-child">
+              <a href="https://www.youtube.com/channel/UCTYmxTk-rr85WkhlMaY8x3A">
+                <i class="fa fa-youtube" style="font-size: 70px"></i>
+              </a>
+            </article>
+          </div>
+          <div class="tile is-parent is-inline-flex-mobile">
+            <article class="tile is-child">
+              <a href="https://github.com/AntonSax">
+                <i class="fa fa-github" style="font-size: 70px"></i>
+              </a>
+            </article>
+          </div>
+        </div>
       </div>
     </div>
 

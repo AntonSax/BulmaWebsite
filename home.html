@@ -1,9 +1,11 @@
 <!-- Make footer not be so spaced out -->
 <!-- Need to write javascript class toggle for the modal. -->
 <!-- The nav bar is sized differently from the rest of the pages. Idk why. -->
+<!-- The title bars don't have margins on mobile/tablet. -->
+<!-- overflow-y is auto so there is an unecessary scroll bar. -->
 
 <!DOCTYPE html>
-<html style="overflow: hidden">
+<html style="overflow-y: auto">
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="A website built with Bulma about Tony Sax">
@@ -37,6 +39,12 @@
                 TonySax.org
               </div>
             </div>
+            <!-- The spans inside just make the bars for the menu icon. -->
+            <span class="nav-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
             <div class="nav-right nav-menu">
               <!-- Create some margin/padding space from the left side -->
               <a class="nav-item is-active" href="home.html">
@@ -94,15 +102,16 @@
     </div>
 
     <!-- Hero content: will be in the middle -->
-    <div class="hero-body" style="margin-top: 100px">
+    <div class="hero-body is-inline-flex-mobile" style="margin-top: 100px">
       <div class="container has-text-centered">
-        <h1 class="title is-1" style="color: black; font-size: 72px">
+        <h1 class="title is-1" style="color: black; font-size: 10vmin">
           TONYSAX.ORG
         </h1>
       </div>
     </div>
 
-    <div class="hero-body is-paddingless is-center" style="margin: 0 auto;">
+    <!-- The styling moves the card to the center. "is-paddingless" just moves stuff downwards. -->
+    <div class="hero-body is-paddingless" style="margin: 0 auto;">
       <div class="container">
         <div class="card" style="background-color: rgba(255,255,255, 0.7)">
           <header class="card-header">
@@ -120,7 +129,7 @@
           <div class="card-content">
             <div class="content">
               <p>Hey! Welcome to my website!</p>
-              <p>I built this website as showcase of my coding skills. It's still a work in progress, so feel free to contact me and give me any advice.
+              <p>I built this website as showcase of my coding skills. It's a work in progress, so feel free to contact me and give me any advice.
               <br>
               <!-- For making timestamps
                 <small>11:09 PM - 1 Jan 2017</small>
@@ -141,7 +150,7 @@
     <!-- Try to change this so that no scrollbar is needed. -->
     <!-- Do this by having the footer raise up when the mouse hovers over a box at the bottom. -->
     <!-- Alternative background color: rgba(0, 0, 0, 0.3) -->
-    <div class="hero-foot" style="background-color: rgba(50, 115, 220, .8)">
+    <div class="hero-foot" style="background-color: rgba(50, 115, 220, .8);">
       <!-- Container class gives indentations of 20px on the sides -->
       <div class="container">
         <div class="tabs is-centered">
