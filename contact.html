@@ -15,7 +15,7 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
-  <link rel="stylesheet" href="http://bulma.io/css/bulma-docs.css">
+  <link rel="stylesheet" href="bulma-master\css\bulma.css">
 
 </head>
 
@@ -33,12 +33,18 @@
                 TonySax.org
               </div>
             </div>
+
+            <!--                 Hamburger Menu                       -->
             <!-- The spans inside just make the bars for the menu icon. -->
-            <span class="nav-toggle">
+            <!-- The spans must be inside labels. -->
+            <label class="nav-toggle" for="nav-toggle-state">
               <span></span>
               <span></span>
               <span></span>
-            </span>
+            </label>
+            <!-- This checkbox is hidden -->
+            <input type="checkbox" id="nav-toggle-state" />
+
             <div class="nav-right nav-menu">
               <!-- Create some margin/padding space from the left side -->
               <a class="nav-item" href="home.html">

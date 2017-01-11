@@ -7,6 +7,7 @@
 <!-- Use a block quote. -->
 <!-- <hr> creates the line ___ break seen on the bulma documentation pages. -->
 <!-- Use a picture of yourself as a child for "work experience". -->
+<!-- Don't use "is-flex-mobile" for the column(s). -->
 
 <!DOCTYPE html>
 <html>
@@ -21,7 +22,7 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
-  <link rel="stylesheet" href="http://bulma.io/css/bulma-docs.css">
+  <link rel="stylesheet" href="bulma-master\css\bulma.css">
 
 </head>
 
@@ -39,12 +40,18 @@
                 TonySax.org
               </div>
             </div>
+
+            <!--                 Hamburger Menu                       -->
             <!-- The spans inside just make the bars for the menu icon. -->
-            <span class="nav-toggle">
+            <!-- The spans must be inside labels. -->
+            <label class="nav-toggle" for="nav-toggle-state">
               <span></span>
               <span></span>
               <span></span>
-            </span>
+            </label>
+            <!-- This checkbox is hidden -->
+            <input type="checkbox" id="nav-toggle-state"/>
+
             <div class="nav-right nav-menu">
               <a class="nav-item" href="home.html">
                 Home
@@ -153,10 +160,10 @@
         </div>
 
         <!-- 2nd Row -->
-        <div class="columns is-flex-mobile" style="margin-top: 75px">
+        <div class="columns" style="margin-top: 75px">
 
           <!-- 2nd Row "2nd Column" -->
-          <div class="column is-offset-2 is-one-third-tablet-tablet">
+          <div class="column is-offset-2 is-one-third-tablet">
             <img src="http://imgur.com/OTGz7SO.jpg" alt="Picture of MST Campus" style="border-radius: 100%">
           </div>
 
@@ -174,10 +181,10 @@
         </div>
 
         <!-- 3rd Row -->
-        <div class="columns is-flex-mobile" style="margin-top: 75px">
+        <div class="columns" style="margin-top: 75px">
 
           <!-- 3rd Row "2nd Column" -->
-          <div class="column is-offset-2 is-one-third-tablet-tablet">
+          <div class="column is-offset-2 is-one-third-tablet">
             <img src="http://imgur.com/7y6B1L2.jpg" alt="Picture of Graduation" style="border-radius: 100%">
           </div>
 
@@ -195,10 +202,10 @@
         </div>
 
         <!-- 4th Row -->
-        <div class="columns is-flex-mobile" style="margin-top: 75px">
+        <div class="columns" style="margin-top: 75px">
 
           <!-- 4th Row "2nd Column" -->
-          <div class="column is-offset-2 is-one-third-tablet-tablet">
+          <div class="column is-offset-2 is-one-third-tablet">
             <img src="http://imgur.com/B5psrIG.jpg" alt="Picture of Goose Island" style="border-radius: 100%">
           </div>
 
@@ -223,13 +230,13 @@
         </div>
 
         <!-- 5th Row -->
-        <div class="columns is-flex-mobile" style="margin-top: 75px">
+        <div class="columns" style="margin-top: 75px">
 
           <!-- 5th Row "2nd Column" -->
-          <div class="column is-offset-2 is-one-third-tablet-tablet">
+          <div class="column is-offset-2 is-one-third-tablet">
             <img src="http://imgur.com/Z83JFZ8.jpg" alt="Picture of Piano" style="border-radius: 100%; margin-bottom: 25px">
-            <img src="http://imgur.com/Lzf02h7.jpg" alt="Picture of Glacier National Park Mountains" style="border-radius: 100%; margin-bottom: 25px">
-            <img src="http://imgur.com/5qIc1Hf.jpg" alt="Picture of Red Bus" style="border-radius: 100%; margin-bottom: 25px">
+            <img class="is-hidden-mobile" src="http://imgur.com/Lzf02h7.jpg" alt="Picture of Glacier National Park Mountains" style="border-radius: 100%; margin-bottom: 25px">
+            <img class="is-hidden-mobile" src="http://imgur.com/5qIc1Hf.jpg" alt="Picture of Red Bus" style="border-radius: 100%; margin-bottom: 25px">
             <!--
             <img src="http://imgur.com/QozwvEU.jpg" alt="Picture of Lake McDonald" style="border-radius: 100%">
           -->
@@ -285,10 +292,10 @@
         </div>
 
         <!-- 6th Row -->
-        <div class="columns is-flex-mobile" style="margin-top: 75px">
+        <div class="columns" style="margin-top: 75px">
 
           <!-- 6th Row "2nd Column" -->
-          <div class="column is-offset-2 is-one-third-tablet-tablet">
+          <div class="column is-offset-2 is-one-third-tablet">
             <img src="http://imgur.com/sF7wqC9.jpg" alt="Picture of Family" style="border-radius: 100%">
           </div>
 
@@ -316,10 +323,10 @@
         </div>
 
         <!-- 7th Row -->
-        <div class="columns is-flex-mobile" style="margin-top: 75px">
+        <div class="columns" style="margin-top: 75px">
 
           <!-- 7th Row "2nd Column" -->
-          <div class="column is-offset-2 is-one-third-tablet-tablet">
+          <div class="column is-offset-2 is-one-third-tablet">
             <img src="http://imgur.com/vtvXr6w.jpg" alt="Picture of Flower" style="border-radius: 100%">
           </div>
 
@@ -330,16 +337,6 @@
                 <h1 style="color: #cccccc">Other Cool Things</h1>
                 <hr>
                 <p>There are so many cool things about me I don't know what to put here!</p>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
               </div>
             </div>
           </div>
