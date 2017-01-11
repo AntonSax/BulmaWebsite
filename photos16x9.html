@@ -3,7 +3,7 @@
 <!-- Remove colors from tile so that there is only red behind them. -->
 
 <!DOCTYPE html>
-<html>
+<html style="overflow: hidden">
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="A website built with Bulma about Tony Sax">
@@ -70,7 +70,7 @@
       <div class="hero-body">
         <div class="container">
           <h1 class="title">
-            Photo Album
+            Photo Gallery
           </h1>
         </div>
       </div>
@@ -86,29 +86,29 @@
         <!-- Creates buttons for pagination. -->
         <!-- Does not place pagination at top of page on its own. -->
         <nav class="pagination is-centered">
-          <a class="pagination-previous">Previous</a>
-          <a class="pagination-next">Next Page</a>
+          <a class="pagination-previous" href="photos16x9.html">Previous</a>
+          <a class="pagination-next" href="photos16x9.html">Next Page</a>
           <ul class="pagination-list">
             <li>
-              <a class="pagination-link">1</a>
+              <a class="pagination-link" href="photos16x9.html">1</a>
             </li>
             <li>
               <span class="pagination-ellipsis">...</span>
             </li>
             <li>
-              <a class="pagination-link">10</a>
+              <a class="pagination-link" href="photos16x9.html">10</a>
             </li>
             <li>
               <a class="pagination-link is-current">11</a>
             </li>
             <li>
-              <a class="pagination-link">12</a>
+              <a class="pagination-link" href="photos16x9.html">12</a>
             </li>
             <li>
               <span class="pagination-ellipsis">...</span>
             </li>
             <li>
-              <a class="pagination-link">30</a>
+              <a class="pagination-link" href="photos16x9.html">30</a>
             </li>
           </ul>
         </nav>
@@ -116,13 +116,13 @@
         <!-- This creates the second and third of four rows. -->
         <div class="tile is-ancestor" style="margin-top:20px;">
 
-          <div class="tile is-parent is-vertical is-2">
-            <div class="tile is-child notification">
+          <div class="tile is-parent is-vertical is-2" style="padding-top: 42px; padding-bottom: 42px">
+            <div class="tile is-child notification" style="padding: 5px 5px 5px 5px">
               <figure class="image is-1by1">
                 <img src="https://placeimg.com/256/256/any">
               </figure>
             </div>
-            <div class="tile is-child notification">
+            <div class="tile is-child notification" style="padding: 5px 5px 5px 5px">
               <figure class="image is-1by1">
                 <img src="https://placeimg.com/256/256/any">
               </figure>
@@ -130,19 +130,19 @@
           </div>
           <!-- This creates the large tile in the center. -->
           <div class="tile is-parent is-8">
-            <div class="tile is-child notification">
+            <div class="tile is-child notification" style="padding: 5px 5px 5px 5px">
               <figure class="image is-16by9">
                 <img src="https://placeimg.com/960/540/any">
               </figure>
             </div>
           </div>
-          <div class="tile is-parent is-vertical is-2">
-            <div class="tile is-child notification">
+          <div class="tile is-parent is-vertical is-2" style="padding-top: 42px; padding-bottom: 42px">
+            <div class="tile is-child notification" style="padding: 5px 5px 5px 5px">
               <figure class="image is-1by1">
                 <img src="https://placeimg.com/256/256/any">
               </figure>
             </div>
-            <div class="tile is-child notification">
+            <div class="tile is-child notification" style="padding: 5px 5px 5px 5px">
               <figure class="image is-1by1">
                 <img src="https://placeimg.com/256/256/any">
               </figure>
@@ -164,13 +164,13 @@
         <div class="container">
           <div class="tabs is-centered">
             <ul>
-              <li class="container">
-                Website made with Bulma by Tony Sax
+              <li style="margin: 0px 25px 0px 25px">
+                Made with Bulma
               </li>
-              <li class="container">
-                Bulma by Jeremy Thomas
+              <li style="margin: 0px 25px 0px 25px">
+                Website by Tony Sax
               </li>
-              <li class="container">
+              <li style="margin: 0px 25px 0px 25px">
                 The source code is licensed MIT.
               </li>
             </ul>

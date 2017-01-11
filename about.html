@@ -69,9 +69,9 @@
       </div>
     </div>
 
-    <!-- Places a hero inside of the fullscreen hero -->
-    <div class="hero is-primary is-bold">
-      <div class="hero-body">
+    <!-- Places a hero inside of the fullscreen hero. Not creating a new hero prevents from using a new color. -->
+    <div class="hero is-primary is-bold" style="padding: 42px 0px 42px 0px">
+      <div class="hero-head">
         <div class="container">
           <h1 class="title">
             About
@@ -140,14 +140,13 @@
                 <p>Hello World!</p>
                 <p>My name is Tony Sax and I'm a 20 year old student studying computer science at the Missouri University of Science and Technology.
                     This is my about page.</p>
-                <p>There is a lot of text on this page, but at least scroll down to look at the pictures!</p>
               </div>
             </div>
           </div>
         </div>
 
         <!-- 2nd Row -->
-        <div class="columns is-mobile">
+        <div class="columns is-mobile" style="margin-top: 75px">
 
           <!-- 2nd Row "2nd Column" -->
           <div class="column is-offset-2 is-4">
@@ -168,7 +167,7 @@
         </div>
 
         <!-- 3rd Row -->
-        <div class="columns is-mobile">
+        <div class="columns is-mobile" style="margin-top: 75px">
 
           <!-- 3rd Row "2nd Column" -->
           <div class="column is-offset-2 is-4">
@@ -189,7 +188,7 @@
         </div>
 
         <!-- 4th Row -->
-        <div class="columns is-mobile">
+        <div class="columns is-mobile" style="margin-top: 75px">
 
           <!-- 4th Row "2nd Column" -->
           <div class="column is-offset-2 is-4">
@@ -217,13 +216,13 @@
         </div>
 
         <!-- 5th Row -->
-        <div class="columns is-mobile">
+        <div class="columns is-mobile" style="margin-top: 75px">
 
           <!-- 5th Row "2nd Column" -->
           <div class="column is-offset-2 is-4">
-            <img src="http://imgur.com/Z83JFZ8.jpg" alt="Picture of Piano" style="border-radius: 100%">
-            <img src="http://imgur.com/Lzf02h7.jpg" alt="Picture of Glacier National Park Mountains" style="border-radius: 100%">
-            <img src="http://imgur.com/5qIc1Hf.jpg" alt="Picture of Red Bus" style="border-radius: 100%">
+            <img src="http://imgur.com/Z83JFZ8.jpg" alt="Picture of Piano" style="border-radius: 100%; margin-bottom: 25px">
+            <img src="http://imgur.com/Lzf02h7.jpg" alt="Picture of Glacier National Park Mountains" style="border-radius: 100%; margin-bottom: 25px">
+            <img src="http://imgur.com/5qIc1Hf.jpg" alt="Picture of Red Bus" style="border-radius: 100%; margin-bottom: 25px">
             <!--
             <img src="http://imgur.com/QozwvEU.jpg" alt="Picture of Lake McDonald" style="border-radius: 100%">
           -->
@@ -265,7 +264,7 @@
                   <hr>
 
                   <h2 id="videogames" style="color: #cccccc">Videogames</h2>
-                  <p>I've played a lot of games. Here are some of the games I still play today.</p>
+                  <p>I've played a lot of games. Here are some of the games I've played recently.</p>
                   <ul>
                     <li>League of Legends</li>
                     <li>Pokemon</li>
@@ -279,7 +278,7 @@
         </div>
 
         <!-- 6th Row -->
-        <div class="columns is-mobile">
+        <div class="columns is-mobile" style="margin-top: 75px">
 
           <!-- 6th Row "2nd Column" -->
           <div class="column is-offset-2 is-4">
@@ -294,21 +293,23 @@
                 <hr>
                 <h4 style="color: #cccccc">This is my family!</h4>
                 <p> From left to right is my brother, my dad, <strong>me</strong>, my mother, and my sister.</p>
-                <article id="fun_fact" class="message is-info" style="margin-left: 10%; width: 75%">
-                  <div class="message-header">
-                    <p>Fun Facts</p>
-                  </div>
-                  <div class="message-body">
-                    My parents share the same birthday and my brother and sister are twins.
-                  </div>
-                </article>
+                <!-- I don't like how this looks.
+                  <article id="fun_fact" class="message is-info" style="margin-left: 10%; width: 75%">
+                    <div class="message-header">
+                      <p>Fun Facts</p>
+                    </div>
+                    <div class="message-body">
+                      My parents share the same birthday and my brother and sister are twins.
+                    </div>
+                  </article>
+                -->
               </div>
             </div>
           </div>
         </div>
 
         <!-- 7th Row -->
-        <div class="columns is-mobile">
+        <div class="columns is-mobile" style="margin-top: 75px">
 
           <!-- 7th Row "2nd Column" -->
           <div class="column is-offset-2 is-4">
@@ -346,13 +347,13 @@
       <div class="container">
         <div class="tabs is-centered">
           <ul>
-            <li class="container">
-              Website made with Bulma by Tony Sax
+            <li style="margin: 0px 25px 0px 25px">
+              Made with Bulma
             </li>
-            <li class="container">
-              Bulma by Jeremy Thomas
+            <li style="margin: 0px 25px 0px 25px">
+              Website by Tony Sax
             </li>
-            <li class="container">
+            <li style="margin: 0px 25px 0px 25px">
               The source code is licensed MIT.
             </li>
           </ul>

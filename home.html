@@ -1,8 +1,9 @@
 <!-- Make footer not be so spaced out -->
 <!-- Need to write javascript class toggle for the modal. -->
+<!-- The nav bar is sized differently from the rest of the pages. Idk why. -->
 
 <!DOCTYPE html>
-<html>
+<html style="overflow: hidden">
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="A website built with Bulma about Tony Sax">
@@ -16,15 +17,17 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
-  <link rel="stylesheet" href="http://bulma.io/css/bulma-docs.css">
+  <link rel="stylesheet" href="bulma-0.2.3\css\bulma.css">
 
 </head>
 
 <body>
   <!-- is-fullheight makes this section and its color the height of the computer screen. -->
-  <section class="hero is-fullheight is-info">
+  <section id="homebackground" class="hero is-fullheight is-info">
     <!-- Hero-head makes this always at the top. -->
-    <div class="hero-head">
+    <!-- Alternative color: rgba(70, 150, 130, 0.7) -->
+    <!-- Alternative color: rgba(0, 0, 0, 0.6) -->
+    <div class="hero-head" style="background-color: rgba(50, 115, 220, .8)">
       <!-- Container makes this have 20px margins on the sides. It also gives it a max width. -->
       <div class="container">
         <nav class="nav has-shadow">
@@ -69,7 +72,8 @@
     </div>
 
     <!-- Modal to introduce user to my website. -->
-    <div class="modal" id="frontModal">
+    <!-- Not currently being used -->
+    <div class="modal" id="homeModal">
       <div class="modal-background"></div>
       <div class="modal-content">
         <article class="message">
@@ -90,34 +94,65 @@
     </div>
 
     <!-- Hero content: will be in the middle -->
-    <div class="hero-body">
+    <div class="hero-body" style="margin-top: 100px">
       <div class="container has-text-centered">
-        <p>
-          <img src="https://avatars3.githubusercontent.com/u/9059836?v=3&u=b0f193b34a08876842f70eb07ec3d3b1f49c8773&s=400" alt="Profile Pic of Tony Sax">
-        </p>
-        <h1 class="title">
-          Tony Sax
+        <h1 class="title is-1" style="color: black; font-size: 72px">
+          TONYSAX.ORG
         </h1>
-        <h2 class="subtitle">
-          Bear's Hump, Waterton Lakes National Park, Alberta, Canada
-        </h2>
+      </div>
+    </div>
+
+    <div class="hero-body is-paddingless is-center" style="margin: 0 auto;">
+      <div class="container">
+        <div class="card" style="background-color: rgba(255,255,255, 0.7)">
+          <header class="card-header">
+            <p class="card-header-title">
+              Welcome!
+            </p>
+            <!-- No need for drop down right now.
+              <a class="card-header-icon">
+                <span class="icon">
+                  <i class="fa fa-angle-down"></i>
+                </span>
+              </a>
+            -->
+          </header>
+          <div class="card-content">
+            <div class="content">
+              <p>Hey! Welcome to my website!</p>
+              <p>I built this website as showcase of my coding skills. It's still a work in progress, so feel free to contact me and give me any advice.
+              <br>
+              <!-- For making timestamps
+                <small>11:09 PM - 1 Jan 2017</small>
+              -->
+            </div>
+          </div>
+          <footer class="card-footer">
+            <!-- I don't know what to do here.
+              <a class="card-footer-item">Save</a>
+              <a class="card-footer-item">Edit</a>
+              <a class="card-footer-item">Delete</a>
+            -->
+          </footer>
+        </div>
       </div>
     </div>
 
     <!-- Try to change this so that no scrollbar is needed. -->
     <!-- Do this by having the footer raise up when the mouse hovers over a box at the bottom. -->
-    <div class="hero-foot">
+    <!-- Alternative background color: rgba(0, 0, 0, 0.3) -->
+    <div class="hero-foot" style="background-color: rgba(50, 115, 220, .8)">
       <!-- Container class gives indentations of 20px on the sides -->
       <div class="container">
         <div class="tabs is-centered">
-          <ul>
-            <li class="container">
-              Website made with Bulma by Tony Sax
+          <ul style="color: lightgrey">
+            <li style="margin: 0px 25px 0px 25px">
+              Made with Bulma
             </li>
-            <li class="container">
-              Bulma by Jeremy Thomas
+            <li style="margin: 0px 25px 0px 25px">
+              Website by Tony Sax
             </li>
-            <li class="container">
+            <li style="margin: 0px 25px 0px 25px">
               The source code is licensed MIT.
             </li>
           </ul>
